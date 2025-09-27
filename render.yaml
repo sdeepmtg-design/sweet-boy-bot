@@ -1,7 +1,7 @@
 services:
   - type: web
     name: sweet-boy-bot
-    env: python
+    runtime: python:3.11.9
     region: oregon
     plan: free
     buildCommand: "pip install -r requirements.txt"
@@ -11,4 +11,3 @@ services:
         value: ""
       - key: DEEPSEEK_API_KEY
         value: ""
-    pythonVersion: 3.11.9
