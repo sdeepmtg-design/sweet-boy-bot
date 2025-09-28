@@ -94,6 +94,6 @@ def webhook():
 def hello():
     return "Sweet Boy Bot is alive! ❤️"
 
-if name == "__main__":
+if __name__ == "__main__":
     application.bot.set_webhook(url=f"{WEBHOOK_URL}/webhook")
     app.run(host="0.0.0.0", port=PORT)
