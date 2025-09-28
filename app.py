@@ -110,7 +110,7 @@ def hello():
 def run_bot():
     application.run_polling()
 
-if name == "__main__":
+if __name__ == "__main__":
     import threading
     bot_thread = threading.Thread(target=run_bot)
     bot_thread.start()
